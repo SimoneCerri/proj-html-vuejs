@@ -20,4 +20,9 @@ export default {
     <Button :name="buttonText"></Button>
 </template>
 
-<style scoped></style>
+<style scoped>
+.my_btn
+{
+    background-color: var(--light);
+}
+</style>

@@ -20,7 +20,6 @@ body
 
 
 /* #region Common */
-
 *
 {
    padding: 0;
@@ -39,6 +38,10 @@ body
   --boring:#8d829c;
 }
 
+button
+{
+  border-style: none;
+}
 /* #endregion Common */
 
 
@@ -52,6 +55,7 @@ body
 .my_btn
 {
   padding: 1em 3em;
+  border-radius: 30px;
 }
 /* #endregion Utilities */
 
@@ -95,6 +99,7 @@ body
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5em 0;
 
   .center_header
   {
