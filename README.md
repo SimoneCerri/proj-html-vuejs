@@ -44,6 +44,10 @@
             - Copyright
             - Socials
 5) Think and refactoring as components
+    - Logo
+    - CardImage
+    - CardWithInfo
+    - Button
 6) Media-Query for dynamic view
 7) Start to put image
     - Adjust / CSS
