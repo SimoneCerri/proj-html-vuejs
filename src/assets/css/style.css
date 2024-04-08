@@ -12,50 +12,104 @@
 
 
 /* #region Debug */
-body
-{
+body {
   background-color: #333;
 }
+
 /* #endregion Debug */
 
 
 /* #region Common */
-*
-{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
 }
 
-:root
-{
-  --primary:#311852;
-  --secondary:#4d36dc;
-  --danger:#ff7a1f;
-  --lightest:#ffffff;
-  --lighter:#fff9f5;
-  --light:#f7f0ff;
-  --boring:#8d829c;
+:root {
+  --primary: #311852;
+  --secondary: #4d36dc;
+  --danger: #ff7a1f;
+  --lightest: #ffffff;
+  --lighter: #fff9f5;
+  --light: #f7f0ff;
+  --boring: #8d829c;
 }
 
-button
-{
+button {
   border-style: none;
 }
+
 /* #endregion Common */
 
 
 /* #region Utilities */
-.container
-{
+.container {
   width: 80%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.my_btn
-{
+.my_btn {
   padding: 1em 3em;
   border-radius: 30px;
+}
+
+.df
+{
+  display: flex;
+}
+
+.just_center
+{
+  justify-content: center;
+}
+
+.align_center
+{
+  align-items: center;
+}
+
+.spacing
+{
+  padding: 3rem;
+}
+
+.little_space
+{
+  padding: 1rem;
+}
+
+.card 
+{
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid var(--boring);
+  padding: 1.5em;
+  aspect-ratio: 3 / 4;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .card_icon
+  {
+    font-size: 100px;
+  }
+
+  .card_title
+  {
+    color: var(--primary);
+    font-size: 40px;
+  }
+
+  .card_info
+  {
+    color: #333;
+    font-size: 20px;
+  }
 }
 /* #endregion Utilities */
 
@@ -63,74 +117,133 @@ button
 /* #region MediaQuery */
 
 /* #region Desktops & Large screens */
-@media screen and (max-width: 1200px)
-{
-   /* Desktops & Large screens */
+@media screen and (max-width: 1200px) {
+  /* Desktops & Large screens */
 }
+
 /* #endregion Desktops & Large screens */
 
 /* #region Small screens & Laptops */
-@media screen and (max-width: 1024px)
-{
-   /* Small screens & Laptops */
+@media screen and (max-width: 1024px) {
+  /* Small screens & Laptops */
 }
+
 /* #endregion Small screens & Laptops */
 
 /* #region iPads & Tablets */
-@media screen and (max-width: 768px)
-{
-   /* iPads & Tablets */
+@media screen and (max-width: 768px) {
+  /* iPads & Tablets */
 }
+
 /* #endregion iPads & Tablets */
 
 /* #region Mobile */
-@media screen and (max-width: 480px)
-{
-   /* Mobile */
+@media screen and (max-width: 480px) {
+  /* Mobile */
 }
+
 /* #endregion Mobile */
 
 /* #endregion MediaQuery */
 
 
 /* #region Header */
-#header
-{
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5em 0;
   /* background-image: url(../img/banner-bg.png); */
 
-  .center_header
-  {
+  .center_header {
     display: flex;
     gap: 1em;
     color: var(--lightest);
   }
 }
+
 /* #endregion Header */
 
 
 /* #region Main */
-#main
-{
+#main {
   text-align: center;
 
-  h3:first-child
+  .slogan
   {
-    color: var(--danger);
+    h3:first-child {
+      color: var(--danger);
+    }
+
+    h1
+    {
+      font-size: 65px;
+    }
+
+    h1,
+    h3 {
+      color: var(--lighter);
+    }
+    
+    .slogan_video
+    {
+      position: relative;
+
+      .play
+      {
+        position: absolute;
+        background-color: #a615ea;
+        border-radius: 50%;
+        padding: 1.8em 2em;
+        font-size: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+        a 
+        {
+          color: var(--lighter);
+        }
+      }
+    }
   }
-  
-  h1,h3
+
+  .animation_love
   {
-    color: var(--lighter);
+    
+    h3 
+    {
+      color: var(--secondary);
+    }
+
+    h1 
+    {
+      color: var(--primary);
+    }
+
+    h4 
+    {
+      color: #333;
+    }
+
+    .our_skills_cards
+    {
+      display: flex;
+      gap: 1em;
+      justify-content: flex-end;
+      
+      .card
+      {
+        width: calc((100% / 12) * 3);
+        
+      }
+    }
   }
 }
+
 /* #endregion Main */
 
 
 /* #region Footer */
 
 /* #endregion Footer */
-
