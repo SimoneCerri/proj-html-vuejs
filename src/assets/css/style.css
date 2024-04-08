@@ -28,6 +28,17 @@ body
    box-sizing: border-box;
 }
 
+:root
+{
+  -primary:#311852;
+  -secondary:#4d36dc;
+  -danger:#ff7a1f;
+  -lightest:#ffffff;
+  -lighter:#fff9f5;
+  -light:#f7f0ff;
+  -boring:#8d829c;
+}
+
 /* #endregion Common */
 
 
