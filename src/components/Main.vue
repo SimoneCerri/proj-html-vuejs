@@ -17,7 +17,7 @@ export default {
                 "Start a Project",
                 "Portfolio"
             ],
-            imageSlogan:"../../assets/img/middle.png"
+            imageSlogan:"./img/middle.png"
         }
     }
 }
@@ -36,7 +36,7 @@ export default {
                 We are a character-driven animation studio striving to make high-quality animations.
             </h3>
             <Button v-for="button in Buttons" :name="button"></Button>
-            <CardImage :image="imageSlogan" />
+            <CardImage :src="imageSlogan" />
         </section>
         <!-- /.slogan -->
         <section class="animation_love">

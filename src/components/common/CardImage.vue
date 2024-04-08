@@ -3,19 +3,21 @@ export default {
     name: "CardImage",
     props:
     [
-        "image",
+        "src",
     ],
     mounted()
     {
-        console.log(this.image);
+        console.log(this.src);
     }
 }
 </script>
 
 <template>
     <div class="card_image">
-        <img :src="image" alt="">
+        <img :src alt="">
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

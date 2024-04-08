@@ -24,6 +24,6 @@ export default
 <style>
 #app
 {
-  background-image: url(./assets/img/banner-bg.png);
+  background-image: url(./img/banner-bg.png);
 }
 </style>

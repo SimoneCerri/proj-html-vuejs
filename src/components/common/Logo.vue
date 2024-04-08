@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <img src="../../assets/img/logo.png" alt="">
+    <img src="/img/logo.png" alt="">
 </template>
 
 <style scoped></style>
