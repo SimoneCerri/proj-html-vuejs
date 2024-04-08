@@ -22,5 +22,8 @@ export default
 </template>
 
 <style>
-
+#app
+{
+  background-image: url(./assets/img/banner-bg.png);
+}
 </style>

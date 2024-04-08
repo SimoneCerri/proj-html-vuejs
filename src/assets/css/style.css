@@ -100,6 +100,7 @@ button
   justify-content: space-between;
   align-items: center;
   padding: 1.5em 0;
+  /* background-image: url(../img/banner-bg.png); */
 
   .center_header
   {
@@ -112,7 +113,20 @@ button
 
 
 /* #region Main */
+#main
+{
+  text-align: center;
 
+  h3:first-child
+  {
+    color: var(--danger);
+  }
+  
+  h1,h3
+  {
+    color: var(--lighter);
+  }
+}
 /* #endregion Main */
 
 
