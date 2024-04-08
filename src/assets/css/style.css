@@ -30,20 +30,29 @@ body
 
 :root
 {
-  -primary:#311852;
-  -secondary:#4d36dc;
-  -danger:#ff7a1f;
-  -lightest:#ffffff;
-  -lighter:#fff9f5;
-  -light:#f7f0ff;
-  -boring:#8d829c;
+  --primary:#311852;
+  --secondary:#4d36dc;
+  --danger:#ff7a1f;
+  --lightest:#ffffff;
+  --lighter:#fff9f5;
+  --light:#f7f0ff;
+  --boring:#8d829c;
 }
 
 /* #endregion Common */
 
 
 /* #region Utilities */
+.container
+{
+  width: 80%;
+  margin: 0 auto;
+}
 
+.my_btn
+{
+  padding: 1em 3em;
+}
 /* #endregion Utilities */
 
 
@@ -81,7 +90,19 @@ body
 
 
 /* #region Header */
+#header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  .center_header
+  {
+    display: flex;
+    gap: 1em;
+    color: var(--lightest);
+  }
+}
 /* #endregion Header */
 
 

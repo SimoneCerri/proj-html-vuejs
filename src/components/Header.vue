@@ -1,11 +1,16 @@
 <script>
-import CenterHeaderSlot from "./HeaderComponents/CenterHeaderSlot.vue"
+import CenterHeader from "./HeaderComponents/CenterHeader.vue"
+import LeftHeader from "./HeaderComponents/LeftHeader.vue"
+import RightHeader from "./HeaderComponents/RightHeader.vue"
+
 
 export default {
     name: "Header",
     components:
     {
-        CenterHeaderSlot,
+        CenterHeader,
+        LeftHeader,
+        RightHeader
     },
     data() {
         return {
@@ -25,9 +30,15 @@ export default {
 </script>
 
 <template>
-    <CenterHeaderSlot v-for="slot in headerSlots" :name="slot"></CenterHeaderSlot>
+    <div id="header" class="container">
+        <LeftHeader></LeftHeader>
+        <div class="center_header">
+            <CenterHeader v-for="slot in headerSlots" :name="slot" class="CenterHeader"></CenterHeader>
+        </div>
+        <RightHeader></RightHeader>
+    </div>
 </template>
 
-<style scoped>
+<style>
 
 </style>

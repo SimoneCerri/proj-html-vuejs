@@ -1,12 +1,11 @@
 <script>
 export default {
-    name: "TopFooter",
-    props: ["name"]
+    name: "Logo",
 }
 </script>
 
 <template>
-    <!-- <div>{{ name }}</div> -->
+    <img src="../../assets/img/logo.png" alt="">
 </template>
 
 <style scoped></style>

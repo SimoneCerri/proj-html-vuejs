@@ -21,4 +21,6 @@ export default
   <Footer />
 </template>
 
-<style scoped></style>
+<style>
+
+</style>

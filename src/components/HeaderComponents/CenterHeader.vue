@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "CenterHeaderSlot",
+    name: "CenterHeader",
     props:["name"]
 }
 </script>
