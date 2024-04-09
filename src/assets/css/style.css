@@ -13,7 +13,7 @@
 
 /* #region Debug */
 body {
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 /* #endregion Debug */
@@ -146,6 +146,7 @@ button {
   align-items: center;
   padding: 1.5em 0;
   /* background-image: url(../img/banner-bg.png); */
+  background: url(../../../public/img/banner-bg.png);
 
   .center_header {
     display: flex;
@@ -162,6 +163,8 @@ button {
   text-align: center;
 
   .slogan {
+    background: url(../../../public/img/banner-bg.png);
+
     h3:first-child {
       color: var(--danger);
     }
@@ -217,6 +220,7 @@ button {
 
       .card {
         width: calc((100% / 12) * 3);
+        background-color: var(--light);
 
         .card_icon {
           color: var(--boring);
@@ -234,6 +238,8 @@ button {
   }
 
   .quick_facts {
+    background: url(../../../public/img/counter-bg.png);
+
     h1 {
       color: var(--lighter);
       font-size: 50px;
@@ -249,7 +255,7 @@ button {
 
       .card {
         width: calc((100% / 12) * 4);
-        background-color: var(--secondary);
+        background-color: transparent;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -395,6 +401,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border: none;
 
         .card_icon {
           position: absolute;
@@ -483,6 +490,8 @@ button {
   }
 
   .tips {
+    background: url(../../../public/img/counter-bg.png);
+
     h3 {
       color: var(--danger);
     }
