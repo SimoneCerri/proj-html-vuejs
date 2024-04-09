@@ -21,6 +21,17 @@ export default {
         <div class="card_info">
             {{ card.info || card.name }}
         </div>
+        <div class="socials">
+            <div class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
     </div>
 </template>
 

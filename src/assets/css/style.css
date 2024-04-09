@@ -221,6 +221,10 @@ button {
         .card_title {
           font-weight: bolder;
         }
+
+        .socials {
+          display: none;
+        }
       }
     }
   }
@@ -261,6 +265,10 @@ button {
           color: var(--danger);
           font-size: 15px;
         }
+
+        .socials {
+          display: none;
+        }
       }
     }
   }
@@ -292,9 +300,7 @@ button {
   .our_process {
     display: flex;
 
-    .left {
-      
-    }
+    .left {}
 
     .right {
       flex-basis: 50%;
@@ -320,8 +326,7 @@ button {
           width: 50%;
           /* flex-basis: 50%; */
 
-          .card_icon
-          {
+          .card_icon {
             background-color: var(--lighter);
             padding: 0.3em 0.5em;
             border-radius: 50%;
@@ -333,47 +338,122 @@ button {
             font-size: 25px;
           }
 
-          .card_info
-          {
+          .card_info {
             font-size: 15px;
+          }
+
+          .socials {
+            display: none;
           }
         }
       }
 
-      .buttons
-      {
+      .buttons {
         display: flex;
         gap: 1em;
 
-        .arrow
-        {
+        .arrow {
           background-color: var(--lighter);
           padding: 0.3em 0.5em;
           border-radius: 50%;
-          border: 0.5px solid #333;
-          color: #333;
-          opacity: 50%;
+          border: 0.5px solid #3333334f;
+          color: #3333334f;
         }
       }
     }
   }
 
-  .members
-  {
-    h3
-    {
+  .members {
+    h3 {
       color: var(--secondary);
     }
 
-    h1 
-    {
+    h1 {
       color: var(--primary);
       font-size: 50px;
     }
 
-    h5 
-    {
+    h5 {
       color: #333;
+    }
+
+    .members_cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3em;
+      margin-top: 6em;
+
+      .card {
+        flex-basis: 33%;
+        background-color: var(--lighter);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .card_icon {
+          position: absolute;
+          top: 1%;
+          margin-top: -20%;
+        }
+
+        .card_title {
+          font-weight: bolder;
+          padding-bottom: 1.5em;
+        }
+
+        .card_info {
+          color: #333;
+          padding-bottom: 3em;
+        }
+
+        .socials {
+          display: flex;
+          gap: 1em;
+
+          i {
+            font-size: 30px;
+            background-color: var(--lightest);
+            border: 0.5px solid #33333356;
+            border-radius: 50%;
+            color: var(--secondary);
+          }
+
+          .facebook {
+            i {
+              padding: 0.3em 0.5em;
+            }
+          }
+
+          .twitter {
+            i {
+              padding: 0.3em;
+            }
+          }
+
+          .instagram {
+            i {
+              padding: 0.3em 0.4em;
+            }
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1em;
+      justify-content: center;
+      align-items: center;
+
+      .arrow {
+        background-color: var(--lighter);
+        padding: 0.3em 0.5em;
+        border-radius: 50%;
+        border: 0.5px solid #3333334f;
+        color: #3333334f;
+      }
     }
   }
 }

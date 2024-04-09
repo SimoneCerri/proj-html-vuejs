@@ -80,6 +80,24 @@ export default {
                         info: "We'll take your idea and create technical script which consists of action notes and animation descriptions",
                     },
                 ],
+            members:
+                [
+                    {
+                        icon: "./img/team1.png",
+                        title: "Robert Coleman",
+                        info: "Owner & Creative Director",
+                    },
+                    {
+                        icon: "./img/team2.png",
+                        title: "Don Woods",
+                        info: "Administrator",
+                    },
+                    {
+                        icon: "./img/team4.png",
+                        title: "Tomas Nash",
+                        info: "2d animator & Compositor",
+                    },
+                ],
         }
     }
 }
@@ -204,6 +222,17 @@ export default {
             <h5>
                 We create new worlds! Let's collaborate and create engaging, effective, award-winning animations.
             </h5>
+            <div class="members_cards container spacing">
+                <CardWithInfo v-for="card in members" :card />
+            </div>
+            <div class="buttons">
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
         </section>
         <!-- /.members -->
         <section class="clients spacing">
