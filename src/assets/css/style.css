@@ -66,11 +66,11 @@ button {
 }
 
 .spacing {
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 
 .little_space {
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .card {
@@ -152,6 +152,20 @@ button {
       display: flex;
       gap: 1em;
       color: var(--lightest);
+      position: relative;
+
+      .moon {
+        background: url(../../../public/img/globe3.png);
+        background-repeat: no-repeat;
+        opacity: 50%;
+        position: absolute;
+        top: -200px;
+        left: 20px;
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        z-index: 2;
+      }
     }
   }
 }
@@ -162,26 +176,94 @@ button {
 /* #region Main */
 #main {
   text-align: center;
+  margin-top: -10px;
 
   .slogan {
     background: url(../../../public/img/banner-bg.png);
     background-repeat: no-repeat;
+    position: relative;
 
-    h3:first-child {
+    .moon1 {
+      background: url(../../../public/img/globe1.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 6%;
+      left: 13%;
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+      z-index: 2;
+    }
+
+    .moon2 {
+      background: url(../../../public/img/globe2.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 4%;
+      left: 60.5%;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      z-index: 2;
+    }
+
+    .ship {
+      background: url(../../../public/img/light.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0.5%;
+      left: 80%;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      z-index: 2;
+    }
+
+    .man1 {
+      background: url(../../../public/img/left-man.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 20%;
+      left: 0%;
+      width: 500px;
+      height: 500px;
+      background-size: contain;
+      z-index: 2;
+    }
+
+    .man2 {
+      background: url(../../../public/img/right-man.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 20%;
+      left: 84.8%;
+      width: 500px;
+      height: 500px;
+      background-size: contain;
+      z-index: 2;
+    }
+
+    .danger {
       color: var(--danger);
     }
 
     h1 {
       font-size: 65px;
+      color: var(--lighter);
+      z-index: 999;
     }
 
-    h1,
-    h3 {
-      color: var(--lighter);
+    h4 {
+      color: var(--boring);
     }
 
     .slogan_video {
       position: relative;
+      z-index: 9999;
+
+      img {
+        width: 1400px;
+      }
 
       .play {
         position: absolute;
@@ -201,6 +283,31 @@ button {
   }
 
   .animation_love {
+    position: relative;
+
+    .vr_man {
+      background: url(../../../public/img/smarttwo.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -45%;
+      left: -25%;
+      width: 1500px;
+      height: 1500px;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    .ship {
+      background: url(../../../public/img/smart4.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 90%;
+      left: 86%;
+      width: 150px;
+      height: 150px;
+      background-size: contain;
+      z-index: 2;
+    }
 
     h3 {
       color: var(--secondary);
@@ -242,10 +349,26 @@ button {
 
   .quick_facts {
     background: url(../../../public/img/counter-bg.png);
+    position: relative;
+
+    .moon {
+      background: url(../../../public/img/globe1.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0%;
+      left: 36.6%;
+      width: 500px;
+      height: 500px;
+      background-size: contain;
+      z-index: 2;
+      opacity: 50%;
+    }
 
     h1 {
       color: var(--lighter);
       font-size: 50px;
+      position: relative;
+      z-index: 9999;
     }
 
     .our_anidio_cards {
@@ -254,8 +377,6 @@ button {
       justify-content: center;
       align-items: center;
 
-
-
       .card {
         width: calc((100% / 12) * 4);
         background-color: transparent;
@@ -263,6 +384,7 @@ button {
         justify-content: center;
         flex-direction: column;
         height: 250px;
+        z-index: 9999;
 
         .card_icon {
           display: none;
@@ -312,21 +434,39 @@ button {
 
   .our_process {
     display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    .left {
+      background: url(../../../public/img/process-thumb.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0%;
+      left: -25%;
+      width: 800px;
+      height: 800px;
+      background-size: contain;
+      z-index: 2;
+    }
 
     .right {
       flex-basis: 50%;
 
+
       h3 {
         color: var(--secondary);
+        text-align: start;
       }
 
       h1 {
         font-size: 50px;
         color: var(--primary);
+        text-align: start;
       }
 
       h5 {
         color: #333;
+        text-align: start;
       }
 
       .our_process_cards {
@@ -334,8 +474,9 @@ button {
         gap: 1em;
 
         .card {
-          width: 50%;
+          width: 40%;
           /* flex-basis: 50%; */
+          border-color: #3333331f;
 
           .card_icon {
             background-color: var(--lighter);

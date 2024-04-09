@@ -120,10 +120,12 @@ export default {
         <!-- ## with h3/h1/h5 + V-FOR for cards + V-IF="button" ## -->
         <!-- ##################################################### -->
         <section class="slogan spacing">
-            <h3>
+            <div class="moon1"></div>
+            <div class="ship"></div>
+            <h3 class="danger">
                 Imagine,Create,Experience
             </h3>
-            <div class="little_space">
+            <div class="spacing">
                 <h1>
                     We Animate
                 </h1>
@@ -131,21 +133,25 @@ export default {
                     With Ninja-Like Precision
                 </h1>
             </div>
-            <h3>
+            <h4 class="little_space">
                 We are a character-driven animation studio striving to make high-quality animations.
-            </h3>
+            </h4>
+            <div class="moon2"></div>
             <div class="df just_center align_center btn_middle spacing">
                 <Button v-for="button in Buttons" :name="button"></Button>
             </div>
-            <div class="slogan_video container">
+            <div class="slogan_video container spacing">
                 <CardImage :src="imageSlogan" />
                 <div class="play">
                     <a href=""><i class="fa-solid fa-play"></i></a>
                 </div>
             </div>
+            <div class="man1"></div>
+            <div class="man2"></div>
         </section>
         <!-- /.slogan -->
         <section class="animation_love spacing">
+            <div class="vr_man"></div>
             <h3>
                 Our Love For Animation
             </h3>
@@ -164,6 +170,7 @@ export default {
             <div class="our_skills_cards container spacing">
                 <CardWithInfo v-for="card in ourSkills" :card />
             </div>
+            <div class="ship"></div>
         </section>
         <!-- /.animation_love -->
         <section class="quick_facts spacing">
@@ -173,6 +180,7 @@ export default {
             <div class="our_anidio_cards container spacing">
                 <CardWithInfo v-for="card in audioCards" :card />
             </div>
+            <div class="moon"></div>
         </section>
         <!-- /.quick_facts -->
         <section class="our_works spacing">
@@ -196,7 +204,7 @@ export default {
         <!-- /.our_works -->
         <section class="our_process spacing container">
             <div class="left">
-                <img src="../../img/process-thumb.png" alt="">
+                
             </div>
             <div class="right">
                 <h3>

@@ -1,6 +1,6 @@
 # PROJECT MIDTERM #
 
-- Remake the screenshot https://drive.google.com/file/d/1i9oygGxLrxEhWnPsAq-ubNzO3D4IYN9y/view
+- Remake the screenshot https://drive.google.com/file/d/1i9oygGxLrxEhWnPsAq-ubNzO3D4IYN9y/view at 1920x1080 resolution !NOT
 
 ## STEPS ##
 

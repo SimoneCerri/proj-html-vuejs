@@ -34,7 +34,10 @@ export default {
         <div id="header" class="container">
             <LeftHeader></LeftHeader>
             <div class="center_header">
-                <CenterHeader v-for="slot in headerSlots" :name="slot" class="CenterHeader"></CenterHeader>
+                <div class="moon">
+
+                </div>
+                <CenterHeader v-for="slot in headerSlots" :name="slot"></CenterHeader>
             </div>
             <RightHeader></RightHeader>
         </div>

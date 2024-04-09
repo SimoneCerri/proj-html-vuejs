@@ -6,7 +6,12 @@ export default {
 </script>
 
 <template>
-    <div>{{ name }}</div>
+    <div class="index">{{ name }}</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.index
+{
+    z-index: 9999;
+}
+</style>
