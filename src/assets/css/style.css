@@ -137,9 +137,9 @@ button {
 
 
 /* #region Header */
-.header 
-{
+.header {
   background: url(../../../public/img/banner-bg.png);
+
   #header {
     display: flex;
     justify-content: space-between;
@@ -147,7 +147,7 @@ button {
     padding: 1.5em 0;
     /* background-image: url(../img/banner-bg.png); */
     /* background: url(../../../public/img/banner-bg.png); */
-    
+
     .center_header {
       display: flex;
       gap: 1em;
@@ -155,6 +155,7 @@ button {
     }
   }
 }
+
 /* #endregion Header */
 
 
@@ -491,6 +492,24 @@ button {
 
   .tips {
     background: url(../../../public/img/counter-bg.png);
+    background-repeat: no-repeat;
+    /* height: 1200px; */
+
+    .up_shape {
+      background: url(./img/bottom-shape.png);
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      height: 300px;
+      margin-top: -11.3%;
+    }
+
+    .bottom_shape {
+      background: url(./img/bottom-shape.png);
+      /* transform: rotate(180deg); */
+      background-repeat: no-repeat;
+      height: 300px;
+      margin-top: -2%;
+    }
 
     h3 {
       color: var(--danger);
@@ -507,18 +526,19 @@ button {
 
     form {
       position: relative;
+      /* margin: 3em 0; */
 
       input {
         width: 50%;
         padding: 2em;
-        border-radius: 30px;
+        border-radius: 40px;
         border: none;
       }
 
       .button {
         position: absolute;
         right: 26%;
-        top: 36%;
+        top: 18%;
 
         >button {
           background-color: var(--secondary);
@@ -543,8 +563,7 @@ button {
   }
 }
 
-.bottom_footer
-{
+.bottom_footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

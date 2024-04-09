@@ -14,4 +14,9 @@ export default {
     </button>
 </template>
 
-<style scoped></style>
+<style scoped>
+:hover
+{
+    cursor: pointer;
+}
+</style>
