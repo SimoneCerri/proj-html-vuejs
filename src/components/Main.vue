@@ -129,10 +129,10 @@ export default {
                     Expert With Creative Smarts
                 </h1>
             </div>
-            <h4>
+            <h5>
                 Our culture inspires the creative and innovative spirit found throughout our Studio. We breath life into
                 new ideas !
-            </h4>
+            </h5>
             <div class="our_skills_cards container spacing">
                 <CardWithInfo v-for="card in ourSkills" :card />
             </div>
@@ -154,12 +154,12 @@ export default {
             <h1 class="spacing">
                 Featured Productions
             </h1>
-            <h4>
+            <h5>
                 Here's just a small sample of some of those projects that we're quite proud of.
-            </h4>
-            <h4>
+            </h5>
+            <h5>
                 If you're looking for something specific feel free to get in contact with us.
-            </h4>
+            </h5>
             <div class="our_works_cards container spacing">
                 <CardImage v-for="card in ourWorksCards" :src="card" />
             </div>
@@ -177,9 +177,9 @@ export default {
                 <h1>
                     Our Process for Your Animation Production
                 </h1>
-                <h4>
+                <h5>
                     We have an effetctive process for working on animation
-                </h4>
+                </h5>
                 <div class="our_process_cards spacing">
                     <CardWithInfo v-for="card in cardProcess" :card />
                 </div>
@@ -195,7 +195,15 @@ export default {
         </section>
         <!-- /.our_process -->
         <section class="members spacing">
-
+            <h3>
+                Anidio Magic Team Member
+            </h3>
+            <h1 class="spacing">
+                Let Us Animate Your Project
+            </h1>
+            <h5>
+                We create new worlds! Let's collaborate and create engaging, effective, award-winning animations.
+            </h5>
         </section>
         <!-- /.members -->
         <section class="clients spacing">

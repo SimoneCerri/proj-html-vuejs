@@ -206,7 +206,7 @@ button {
       font-size: 50px;
     }
 
-    h4 {
+    h5 {
       color: #333;
     }
 
@@ -276,7 +276,7 @@ button {
       color: var(--primary);
     }
 
-    h4 {
+    h5 {
       color: #333;
     }
 
@@ -308,7 +308,7 @@ button {
         color: var(--primary);
       }
 
-      h4 {
+      h5 {
         color: #333;
       }
 
@@ -355,6 +355,25 @@ button {
           opacity: 50%;
         }
       }
+    }
+  }
+
+  .members
+  {
+    h3
+    {
+      color: var(--secondary);
+    }
+
+    h1 
+    {
+      color: var(--primary);
+      font-size: 50px;
+    }
+
+    h5 
+    {
+      color: #333;
     }
   }
 }
