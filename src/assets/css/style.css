@@ -301,10 +301,10 @@ button {
       background: url(../../../public/img/smart4.png);
       background-repeat: no-repeat;
       position: absolute;
-      top: 90%;
-      left: 86%;
-      width: 150px;
-      height: 150px;
+      top: 85%;
+      left: 87%;
+      width: 200px;
+      height: 200px;
       background-size: contain;
       z-index: 2;
     }
@@ -430,12 +430,28 @@ button {
       align-items: center;
       gap: 3em;
     }
+
+    .space_bottom {
+      padding-bottom: 6rem;
+    }
   }
 
   .our_process {
     display: flex;
     justify-content: flex-end;
     position: relative;
+
+    .ship {
+      background: url(../../../public/img/smart4.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 80%;
+      left: 93%;
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+      z-index: 2;
+    }
 
     .left {
       background: url(../../../public/img/process-thumb.png);
@@ -506,7 +522,7 @@ button {
 
         .arrow {
           background-color: var(--lighter);
-          padding: 0.3em 0.5em;
+          padding: 0.8em 1em;
           border-radius: 50%;
           border: 0.5px solid #3333334f;
           color: #3333334f;
@@ -516,6 +532,32 @@ button {
   }
 
   .members {
+    position: relative;
+
+    .moon1 {
+      background: url(../../../public/img/shape.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 16%;
+      left: 0%;
+      width: 1000px;
+      height: 1000px;
+      background-size: cover;
+      z-index: 4;
+    }
+
+    .moon2 {
+      background: url(../../../public/img/shape2.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 6%;
+      left: 48%;
+      width: 1000px;
+      height: 1000px;
+      background-size: cover;
+      z-index: 2;
+    }
+
     h3 {
       color: var(--secondary);
     }
@@ -544,6 +586,7 @@ button {
         flex-direction: column;
         justify-content: flex-end;
         border: none;
+        z-index: 9999;
 
         .card_icon {
           position: absolute;
@@ -602,7 +645,7 @@ button {
 
       .arrow {
         background-color: var(--lighter);
-        padding: 0.3em 0.5em;
+        padding: 0.8em 1em;
         border-radius: 50%;
         border: 0.5px solid #3333334f;
         color: #3333334f;
@@ -683,7 +726,7 @@ button {
       .button {
         position: absolute;
         right: 26%;
-        top: 36%;
+        top: 42%;
 
         >button {
           background-color: var(--secondary);
@@ -700,6 +743,7 @@ button {
 .top {
   display: flex;
   justify-content: space-between;
+  margin-top: 6rem;
 
   .footer_info {
     display: flex;
@@ -718,7 +762,8 @@ button {
 
     a {
       text-decoration: none;
-      color: #311852;
+      color: var(--secondary);
+      font-weight: bold;
     }
   }
 

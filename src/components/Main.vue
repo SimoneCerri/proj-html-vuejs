@@ -125,7 +125,7 @@ export default {
             <h3 class="danger">
                 Imagine,Create,Experience
             </h3>
-            <div class="spacing">
+            <div class="little_space">
                 <h1>
                     We Animate
                 </h1>
@@ -133,14 +133,14 @@ export default {
                     With Ninja-Like Precision
                 </h1>
             </div>
-            <h4 class="little_space">
+            <h4 class="">
                 We are a character-driven animation studio striving to make high-quality animations.
             </h4>
             <div class="moon2"></div>
             <div class="df just_center align_center btn_middle spacing">
                 <Button v-for="button in Buttons" :name="button"></Button>
             </div>
-            <div class="slogan_video container spacing">
+            <div class="slogan_video container little_space">
                 <CardImage :src="imageSlogan" />
                 <div class="play">
                     <a href=""><i class="fa-solid fa-play"></i></a>
@@ -187,7 +187,7 @@ export default {
             <h3>
                 Our Works
             </h3>
-            <h1 class="spacing">
+            <h1 class="little_space">
                 Featured Productions
             </h1>
             <h5>
@@ -199,7 +199,9 @@ export default {
             <div class="our_works_cards container spacing">
                 <CardImage v-for="card in ourWorksCards" :src="card" />
             </div>
-            <Button :name="ourWorkButton" />
+            <div class="space_bottom">
+                <Button :name="ourWorkButton" />
+            </div>
         </section>
         <!-- /.our_works -->
         <section class="our_process spacing container">
@@ -228,13 +230,16 @@ export default {
                     </div>
                 </div>
             </div>
+            <div class="ship"></div>
         </section>
         <!-- /.our_process -->
         <section class="members spacing">
+            <div class="moon1"></div>
+            <div class="moon2"></div>
             <h3>
                 Anidio Magic Team Member
             </h3>
-            <h1 class="spacing">
+            <h1 class="little_space">
                 Let Us Animate Your Project
             </h1>
             <h5>
@@ -257,7 +262,7 @@ export default {
             <h3>
                 Why Anidio studio ?
             </h3>
-            <h1 class="spacing">
+            <h1 class="little_space">
                 We Love Our Clients
             </h1>
             <h5>
@@ -276,7 +281,7 @@ export default {
             <h3>
                 We Create New Worlds !
             </h3>
-            <h1 class="spacing">
+            <h1 class="little_space">
                 Want Tips On Your Storytelling ?
             </h1>
             <h5>

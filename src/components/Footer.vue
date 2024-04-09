@@ -28,14 +28,14 @@ export default {
 </script>
 
 <template>
-    <div class="top container spacing">
+    <div class="top container little_space">
         <Logo :src />
         <div class="footer_info">
             <TopFooter v-for="slot in footerSlots" :name="slot"></TopFooter>
         </div>
     </div>
     <hr class="container hr">
-    <div class="bottom container spacing">
+    <div class="bottom container little_space">
         <BottomFooter></BottomFooter>
     </div>
 </template>
