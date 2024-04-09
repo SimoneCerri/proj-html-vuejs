@@ -99,15 +99,15 @@ export default {
                     },
                 ],
             clientsCards:
-            [
-                "./img/sponsor1.png",
-                "./img/sponsor2.png",
-                "./img/sponsor3.png",
-                "./img/sponsor4.png",
-                "./img/sponsor5.png",
-                "./img/sponsor6.png",
-            ],
-            tipButton:"Submit",
+                [
+                    "./img/sponsor1.png",
+                    "./img/sponsor2.png",
+                    "./img/sponsor3.png",
+                    "./img/sponsor4.png",
+                    "./img/sponsor5.png",
+                    "./img/sponsor6.png",
+                ],
+            tipButton: "Submit",
         }
     }
 }
@@ -253,7 +253,8 @@ export default {
                 We Love Our Clients
             </h1>
             <h5>
-                We are trusted throughout adland and have a wealth of recommendations from start-ups to renowned global brands.
+                We are trusted throughout adland and have a wealth of recommendations from start-ups to renowned global
+                brands.
             </h5>
             <div class="clients_cards container spacing">
                 <CardImage v-for="src in clientsCards" :src />
@@ -273,7 +274,7 @@ export default {
             <h5>
                 Join our neswletter for tips on how to elevate your brand through storytelling
             </h5>
-            <form action="submit" class="">
+            <form action="submit" class="spacing">
                 <input type="text" placeholder="Enter your email">
                 <div class="button">
                     <Button :name="tipButton" />
