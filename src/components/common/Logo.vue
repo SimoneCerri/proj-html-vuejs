@@ -1,11 +1,12 @@
 <script>
 export default {
     name: "Logo",
+    props:["src"],
 }
 </script>
 
 <template>
-    <img src="/img/logo.png" alt="">
+    <img :src alt="">
 </template>
 
 <style scoped></style>

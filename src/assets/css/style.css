@@ -12,9 +12,6 @@
 
 
 /* #region Debug */
-body {
-  /* background-color: #333; */
-}
 
 /* #endregion Debug */
 
@@ -140,21 +137,24 @@ button {
 
 
 /* #region Header */
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5em 0;
-  /* background-image: url(../img/banner-bg.png); */
+.header 
+{
   background: url(../../../public/img/banner-bg.png);
-
-  .center_header {
+  #header {
     display: flex;
-    gap: 1em;
-    color: var(--lightest);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+    /* background-image: url(../img/banner-bg.png); */
+    /* background: url(../../../public/img/banner-bg.png); */
+    
+    .center_header {
+      display: flex;
+      gap: 1em;
+      color: var(--lightest);
+    }
   }
 }
-
 /* #endregion Header */
 
 
@@ -164,6 +164,7 @@ button {
 
   .slogan {
     background: url(../../../public/img/banner-bg.png);
+    background-repeat: no-repeat;
 
     h3:first-child {
       color: var(--danger);
@@ -228,6 +229,7 @@ button {
 
         .card_title {
           font-weight: bolder;
+          font-size: 35px;
         }
 
         .socials {
@@ -309,8 +311,6 @@ button {
 
   .our_process {
     display: flex;
-
-    .left {}
 
     .right {
       flex-basis: 50%;
@@ -400,7 +400,7 @@ button {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         border: none;
 
         .card_icon {

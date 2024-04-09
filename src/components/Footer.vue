@@ -20,7 +20,8 @@ export default {
                     "Pricing",
                     "Career",
                     "Contact"
-                ]
+                ],
+                src:"./img/footer-logo.png"
         }
     }
 }
@@ -28,7 +29,7 @@ export default {
 
 <template>
     <div class="top container spacing">
-        <Logo />
+        <Logo :src />
         <div class="footer_info">
             <TopFooter v-for="slot in footerSlots" :name="slot"></TopFooter>
         </div>

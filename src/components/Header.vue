@@ -30,15 +30,15 @@ export default {
 </script>
 
 <template>
-    <div id="header" class="container">
-        <LeftHeader></LeftHeader>
-        <div class="center_header">
-            <CenterHeader v-for="slot in headerSlots" :name="slot" class="CenterHeader"></CenterHeader>
+    <section class="header">
+        <div id="header" class="container">
+            <LeftHeader></LeftHeader>
+            <div class="center_header">
+                <CenterHeader v-for="slot in headerSlots" :name="slot" class="CenterHeader"></CenterHeader>
+            </div>
+            <RightHeader></RightHeader>
         </div>
-        <RightHeader></RightHeader>
-    </div>
+    </section>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

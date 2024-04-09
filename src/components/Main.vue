@@ -25,17 +25,17 @@ export default {
             ourSkills:
                 [
                     {
-                        icon: "fa-brands fa-searchengin",
+                        icon: "./img/smart1.png",
                         title: "3D modeling",
                         info: "We constantly ask questions. It helps us hsape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
                     },
                     {
-                        icon: "fa-solid fa-arrows-spin",
+                        icon: "./img/smart2.png",
                         title: "Collaboration",
                         info: "We constantly ask questions. It helps us hsape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
                     },
                     {
-                        icon: "fa-solid fa-brain",
+                        icon: "./img/smart3.png",
                         title: "Creativity",
                         info: "We constantly ask questions. It helps us hsape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
                     },
@@ -117,7 +117,7 @@ export default {
     <div id="main">
         <!-- ##################################################### -->
         <!-- ## can be refactoring with a V-FOR to make section ## -->
-        <!-- ## with h3/h1/h4 + V-FOR for cards + V-IF="buttons" ##-->
+        <!-- ## with h3/h1/h5 + V-FOR for cards + V-IF="button" ## -->
         <!-- ##################################################### -->
         <section class="slogan spacing">
             <h3>

@@ -5,13 +5,17 @@ export default {
     components:
     {
         Logo,
+    },
+    data() {
+        return {
+            src:"./img/logo.png"
+        }
     }
 }
 </script>
 
 <template>
-    <Logo/>
+    <Logo :src />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
