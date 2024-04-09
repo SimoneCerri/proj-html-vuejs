@@ -13,6 +13,9 @@ export default {
     },
     data() {
         return {
+            /* ######################################################### */
+            /* ## ALL THAT DATA CAN BE PLACED IN A STORE.JS MAYBE (?) ## */
+            /* ######################################################### */
             Buttons:
                 [
                     "Start a Project",
@@ -55,7 +58,15 @@ export default {
                     number: "12+",
                     name: "Years on the market",
                 },
-            ]
+            ],
+            ourWorksCards:
+            [
+                "./img/work1.png",
+                "./img/work2.png",
+                "./img/work3.png",
+                "./img/work4.png",
+            ],
+            ourWorkButton:"See Our Work",
         }
     }
 }
@@ -63,6 +74,10 @@ export default {
 
 <template>
     <div id="main">
+        <!-- ##################################################### -->
+        <!-- ## can be refactoring with a V-FOR to make section ## -->
+        <!-- ## with h3/h1/h4 + V-FOR for cards + V-IF="buttons" ##-->
+        <!-- ##################################################### -->
         <section class="slogan spacing">
             <h3>
                 Imagine,Create,Experience
@@ -108,24 +123,38 @@ export default {
             <div class="our_skills_cards container spacing">
                 <CardWithInfo v-for="card in ourSkills" :card />
             </div>
-            <h1 class="anidio_title">
+        </section>
+        <!-- /.animation_love -->
+        <section class="quick_facts spacing">
+            <h1>
                 Anidio Quick Facts
             </h1>
             <div class="our_anidio_cards container spacing">
                 <CardWithInfo v-for="card in audioCards" :card />
             </div>
         </section>
-        <!-- /.animation_love -->
-        <section class="quick_facts spacing">
-
-        </section>
         <!-- /.quick_facts -->
         <section class="our_works spacing">
-
+            <h3>
+                Our Works
+            </h3>
+            <h1 class="spacing">
+                Featured Productions
+            </h1>
+            <h4>
+                Here's just a small sample of some of those projects that we're quite proud of.
+            </h4>
+            <h4>
+                If you're looking for something specific feel free to get in contact with us.
+            </h4>
+            <div class="our_works_cards container spacing">
+                <CardImage v-for="card in ourWorksCards" :src="card" />
+            </div>
+            <Button :name="ourWorkButton" />
         </section>
         <!-- /.our_works -->
         <section class="our_process spacing">
-
+            
         </section>
         <!-- /.our_process -->
         <section class="members spacing">

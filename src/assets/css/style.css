@@ -56,33 +56,27 @@ button {
   border-radius: 30px;
 }
 
-.df
-{
+.df {
   display: flex;
 }
 
-.just_center
-{
+.just_center {
   justify-content: center;
 }
 
-.align_center
-{
+.align_center {
   align-items: center;
 }
 
-.spacing
-{
+.spacing {
   padding: 3rem 0;
 }
 
-.little_space
-{
+.little_space {
   padding: 1rem 0;
 }
 
-.card 
-{
+.card {
   background-color: white;
   border-radius: 30px;
   display: flex;
@@ -94,23 +88,21 @@ button {
   justify-content: space-evenly;
   align-items: center;
 
-  .card_icon
-  {
+  .card_icon {
     font-size: 100px;
   }
 
-  .card_title
-  {
+  .card_title {
     color: var(--primary);
     font-size: 40px;
   }
 
-  .card_info
-  {
+  .card_info {
     color: #333;
     font-size: 20px;
   }
 }
+
 /* #endregion Utilities */
 
 
@@ -169,14 +161,12 @@ button {
 #main {
   text-align: center;
 
-  .slogan
-  {
+  .slogan {
     h3:first-child {
       color: var(--danger);
     }
 
-    h1
-    {
+    h1 {
       font-size: 65px;
     }
 
@@ -184,13 +174,11 @@ button {
     h3 {
       color: var(--lighter);
     }
-    
-    .slogan_video
-    {
+
+    .slogan_video {
       position: relative;
 
-      .play
-      {
+      .play {
         position: absolute;
         background-color: #a615ea;
         border-radius: 50%;
@@ -199,52 +187,48 @@ button {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        
-        a 
-        {
+
+        a {
           color: var(--lighter);
         }
       }
     }
   }
 
-  .animation_love
-  {
-    
-    h3 
-    {
+  .animation_love {
+
+    h3 {
       color: var(--secondary);
     }
 
-    h1 
-    {
+    h1 {
       color: var(--primary);
       font-size: 50px;
     }
 
-    .anidio_title
-    {
-      color: var(--lighter);
-    }
-
-    h4 
-    {
+    h4 {
       color: #333;
     }
 
-    .our_skills_cards
-    {
+    .our_skills_cards {
       display: flex;
       gap: 1em;
       justify-content: flex-end;
-      
-      .card
-      {
+
+      .card {
         width: calc((100% / 12) * 3);
-        
+
       }
     }
+  }
 
+  .quick_facts
+  {
+    h1
+    {
+      color: var(--lighter);
+      font-size: 50px;
+    }
     .our_anidio_cards
     {
       display: flex;
@@ -252,7 +236,9 @@ button {
       justify-content: center;
       align-items: center;
 
-      .card 
+      
+
+      .card
       {
         width: calc((100% / 12) * 4);
         background-color: var(--secondary);
@@ -274,6 +260,34 @@ button {
           font-size: 15px;
         }
       }
+    }
+  }
+
+  .our_works
+  {
+
+    h3 
+    {
+      color: var(--secondary);
+    }
+
+    h1 
+    {
+      font-size: 50px;
+      color: var(--primary);
+    }
+
+    h4 
+    {
+      color: #333;
+    }
+
+    .our_works_cards
+    {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      width: calc(( 100 / 12 ) * 6);
     }
   }
 }
