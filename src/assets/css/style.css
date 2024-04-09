@@ -73,12 +73,12 @@ button {
 
 .spacing
 {
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .little_space
 {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .card 
@@ -219,6 +219,12 @@ button {
     h1 
     {
       color: var(--primary);
+      font-size: 50px;
+    }
+
+    .anidio_title
+    {
+      color: var(--lighter);
     }
 
     h4 
@@ -236,6 +242,37 @@ button {
       {
         width: calc((100% / 12) * 3);
         
+      }
+    }
+
+    .our_anidio_cards
+    {
+      display: flex;
+      gap: 3em;
+      justify-content: center;
+      align-items: center;
+
+      .card 
+      {
+        width: calc((100% / 12) * 4);
+        background-color: var(--secondary);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 250px;
+
+        .card_title
+        {
+          color: var(--lighter);
+          font-weight: bolder;
+          font-size: 50px;
+        }
+
+        .card_info
+        {
+          color: var(--danger);
+          font-size: 15px;
+        }
       }
     }
   }

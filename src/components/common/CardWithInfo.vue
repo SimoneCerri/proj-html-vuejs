@@ -15,10 +15,10 @@ export default {
             <i :class=card.icon></i>
         </div>
         <div class="card_title">
-            {{ card.title }}
+            {{ card.title || card.number }}
         </div>
         <div class="card_info">
-            {{ card.info }}
+            {{ card.info || card.name }}
         </div>
     </div>
 </template>

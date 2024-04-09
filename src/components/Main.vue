@@ -36,7 +36,26 @@ export default {
                         title: "Creativity",
                         info: "We constantly ask questions. It helps us hsape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
                     },
-                ]
+                ],
+            audioCards:
+            [
+                {
+                    number:"700+",
+                    name:"Projects done",
+                },
+                {
+                    number: "250+",
+                    name: "Happy Clients",  
+                },
+                {
+                    number: "25+",
+                    name: "Team Members",
+                },
+                {
+                    number: "12+",
+                    name: "Years on the market",
+                },
+            ]
         }
     }
 }
@@ -74,15 +93,26 @@ export default {
             <h3>
                 Our Love For Animation
             </h3>
-            <h1 class="little_space">
-                We're StoryTelling Expert With Creative Smarts
-            </h1>
+            <div class="little_space">
+                <h1>
+                    We're StoryTelling
+                </h1>
+                <h1>
+                    Expert With Creative Smarts
+                </h1>
+            </div>
             <h4>
                 Our culture inspires the creative and innovative spirit found throughout our Studio. We breath life into
                 new ideas !
             </h4>
             <div class="our_skills_cards container spacing">
                 <CardWithInfo v-for="card in ourSkills" :card />
+            </div>
+            <h1 class="anidio_title">
+                Anidio Quick Facts
+            </h1>
+            <div class="our_anidio_cards container spacing">
+                <CardWithInfo v-for="card in audioCards" :card />
             </div>
         </section>
         <!-- /.animation_love -->
