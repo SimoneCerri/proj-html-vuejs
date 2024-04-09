@@ -218,6 +218,10 @@ button {
       .card {
         width: calc((100% / 12) * 3);
 
+        .card_icon {
+          color: var(--boring);
+        }
+
         .card_title {
           font-weight: bolder;
         }
@@ -457,79 +461,127 @@ button {
     }
   }
 
-  .clients
-  {
-    h3 
-    {
+  .clients {
+    h3 {
       color: var(--secondary);
     }
 
-    h1 
-    {
-      color:var(--primary);
+    h1 {
+      color: var(--primary);
       font-size: 50px;
     }
 
-    h4 
-    {
+    h4 {
       color: #333;
     }
 
-    .clients_cards
-    {
+    .clients_cards {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
   }
 
-  .tips
-  {
-    h3 
-    {
+  .tips {
+    h3 {
       color: var(--danger);
     }
 
-    h1 
-    {
+    h1 {
       color: var(--lightest);
       font-size: 50px;
     }
 
-    h5 
-    {
+    h5 {
       color: var(--lightest);
     }
 
-    form
-    {
+    form {
       position: relative;
 
-      input 
-      {
+      input {
         width: 50%;
         padding: 2em;
         border-radius: 30px;
         border: none;
       }
 
-      .button
-      {
+      .button {
         position: absolute;
         right: 26%;
         top: 36%;
 
-        >button
-        {
+        >button {
           background-color: var(--secondary);
         }
       }
     }
   }
 }
+
 /* #endregion Main */
 
 
 /* #region Footer */
+.top {
+  display: flex;
+  justify-content: space-between;
+
+  .footer_info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.bottom_footer
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    color: #333;
+
+    a {
+      text-decoration: none;
+      color: #311852;
+    }
+  }
+
+  .right {
+
+    .socials {
+      display: flex;
+      gap: 1em;
+
+      i {
+        font-size: 20px;
+        background-color: var(--lightest);
+        border: 0.5px solid #33333356;
+        border-radius: 50%;
+        color: var(--secondary);
+      }
+
+      .facebook {
+        i {
+          padding: 0.3em 0.5em;
+        }
+      }
+
+      .twitter {
+        i {
+          padding: 0.3em;
+        }
+      }
+
+      .instagram {
+        i {
+          padding: 0.3em 0.4em;
+        }
+      }
+    }
+  }
+}
 
 /* #endregion Footer */

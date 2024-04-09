@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <!-- <div>{{ name }}</div> -->
+    <div>{{ name }}</div>
 </template>
 
 <style scoped></style>

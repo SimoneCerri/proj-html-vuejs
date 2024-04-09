@@ -1,13 +1,15 @@
 <script>
 import TopFooter from "./FooterComponents/TopFooter.vue"
 import BottomFooter from "./FooterComponents/BottomFooter.vue"
+import Logo from "./common/Logo.vue"
 
 export default {
     name: "Footer",
     components:
     {
         TopFooter,
-        BottomFooter
+        BottomFooter,
+        Logo,
     },
     data() {
         return {
@@ -25,8 +27,16 @@ export default {
 </script>
 
 <template>
-    <TopFooter v-for="slot in footerSlots" :name="slot"></TopFooter>
-    <BottomFooter></BottomFooter>
+    <div class="top container spacing">
+        <Logo />
+        <div class="footer_info">
+            <TopFooter v-for="slot in footerSlots" :name="slot"></TopFooter>
+        </div>
+    </div>
+    <hr class="container hr">
+    <div class="bottom container spacing">
+        <BottomFooter></BottomFooter>
+    </div>
 </template>
 
 <style scoped></style>
