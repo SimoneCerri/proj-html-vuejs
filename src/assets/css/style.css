@@ -218,28 +218,28 @@ button {
       .card {
         width: calc((100% / 12) * 3);
 
+        .card_title {
+          font-weight: bolder;
+        }
       }
     }
   }
 
-  .quick_facts
-  {
-    h1
-    {
+  .quick_facts {
+    h1 {
       color: var(--lighter);
       font-size: 50px;
     }
-    .our_anidio_cards
-    {
+
+    .our_anidio_cards {
       display: flex;
       gap: 3em;
       justify-content: center;
       align-items: center;
 
-      
 
-      .card
-      {
+
+      .card {
         width: calc((100% / 12) * 4);
         background-color: var(--secondary);
         display: flex;
@@ -247,15 +247,17 @@ button {
         flex-direction: column;
         height: 250px;
 
-        .card_title
-        {
+        .card_icon {
+          display: none;
+        }
+
+        .card_title {
           color: var(--lighter);
           font-weight: bolder;
           font-size: 50px;
         }
 
-        .card_info
-        {
+        .card_info {
           color: var(--danger);
           font-size: 15px;
         }
@@ -263,31 +265,96 @@ button {
     }
   }
 
-  .our_works
-  {
+  .our_works {
 
-    h3 
-    {
+    h3 {
       color: var(--secondary);
     }
 
-    h1 
-    {
+    h1 {
       font-size: 50px;
       color: var(--primary);
     }
 
-    h4 
-    {
+    h4 {
       color: #333;
     }
 
-    .our_works_cards
-    {
+    .our_works_cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 1em;
-      width: calc(( 100 / 12 ) * 6);
+      justify-content: center;
+      align-items: center;
+      gap: 3em;
+    }
+  }
+
+  .our_process {
+    display: flex;
+
+    .left {
+      
+    }
+
+    .right {
+      flex-basis: 50%;
+
+      h3 {
+        color: var(--secondary);
+      }
+
+      h1 {
+        font-size: 50px;
+        color: var(--primary);
+      }
+
+      h4 {
+        color: #333;
+      }
+
+      .our_process_cards {
+        display: flex;
+        gap: 1em;
+
+        .card {
+          width: 50%;
+          /* flex-basis: 50%; */
+
+          .card_icon
+          {
+            background-color: var(--lighter);
+            padding: 0.3em 0.5em;
+            border-radius: 50%;
+          }
+
+          .card_title {
+            color: var(--primary);
+            font-weight: bolder;
+            font-size: 25px;
+          }
+
+          .card_info
+          {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .buttons
+      {
+        display: flex;
+        gap: 1em;
+
+        .arrow
+        {
+          background-color: var(--lighter);
+          padding: 0.3em 0.5em;
+          border-radius: 50%;
+          border: 0.5px solid #333;
+          color: #333;
+          opacity: 50%;
+        }
+      }
     }
   }
 }

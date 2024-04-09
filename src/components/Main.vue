@@ -41,32 +41,45 @@ export default {
                     },
                 ],
             audioCards:
-            [
-                {
-                    number:"700+",
-                    name:"Projects done",
-                },
-                {
-                    number: "250+",
-                    name: "Happy Clients",  
-                },
-                {
-                    number: "25+",
-                    name: "Team Members",
-                },
-                {
-                    number: "12+",
-                    name: "Years on the market",
-                },
-            ],
+                [
+                    {
+                        number: "700+",
+                        name: "Projects done",
+                    },
+                    {
+                        number: "250+",
+                        name: "Happy Clients",
+                    },
+                    {
+                        number: "25+",
+                        name: "Team Members",
+                    },
+                    {
+                        number: "12+",
+                        name: "Years on the market",
+                    },
+                ],
             ourWorksCards:
-            [
-                "./img/work1.png",
-                "./img/work2.png",
-                "./img/work3.png",
-                "./img/work4.png",
-            ],
-            ourWorkButton:"See Our Work",
+                [
+                    "./img/work1.png",
+                    "./img/work2.png",
+                    "./img/work3.png",
+                    "./img/work4.png",
+                ],
+            ourWorkButton: "See Our Work",
+            cardProcess:
+                [
+                    {
+                        icon: "./img/process1.png",
+                        title: "Pre-Production",
+                        info: "We'll take your idea and create technical script which consists of action notes and animation descriptions",
+                    },
+                    {
+                        icon: "./img/process2.png",
+                        title: "Scripting",
+                        info: "We'll take your idea and create technical script which consists of action notes and animation descriptions",
+                    },
+                ],
         }
     }
 }
@@ -153,8 +166,32 @@ export default {
             <Button :name="ourWorkButton" />
         </section>
         <!-- /.our_works -->
-        <section class="our_process spacing">
-            
+        <section class="our_process spacing container">
+            <div class="left">
+                <img src="../../img/process-thumb.png" alt="">
+            </div>
+            <div class="right">
+                <h3>
+                    Our Process
+                </h3>
+                <h1>
+                    Our Process for Your Animation Production
+                </h1>
+                <h4>
+                    We have an effetctive process for working on animation
+                </h4>
+                <div class="our_process_cards spacing">
+                    <CardWithInfo v-for="card in cardProcess" :card />
+                </div>
+                <div class="buttons">
+                    <div class="arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- /.our_process -->
         <section class="members spacing">

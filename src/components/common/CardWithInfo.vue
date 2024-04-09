@@ -13,6 +13,7 @@ export default {
     <div class="card">
         <div class="card_icon">
             <i :class=card.icon></i>
+            <img :src=card.icon alt="">
         </div>
         <div class="card_title">
             {{ card.title || card.number }}
