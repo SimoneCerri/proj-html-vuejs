@@ -482,8 +482,51 @@ button {
       align-items: center;
     }
   }
-}
 
+  .tips
+  {
+    h3 
+    {
+      color: var(--danger);
+    }
+
+    h1 
+    {
+      color: var(--lightest);
+      font-size: 50px;
+    }
+
+    h5 
+    {
+      color: var(--lightest);
+    }
+
+    form
+    {
+      position: relative;
+
+      input 
+      {
+        width: 50%;
+        padding: 2em;
+        border-radius: 30px;
+        border: none;
+      }
+
+      .button
+      {
+        position: absolute;
+        right: 26%;
+        top: 36%;
+
+        >button
+        {
+          background-color: var(--secondary);
+        }
+      }
+    }
+  }
+}
 /* #endregion Main */
 
 

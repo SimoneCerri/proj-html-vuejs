@@ -107,6 +107,7 @@ export default {
                 "./img/sponsor5.png",
                 "./img/sponsor6.png",
             ],
+            tipButton:"Submit",
         }
     }
 }
@@ -260,7 +261,21 @@ export default {
         </section>
         <!-- /.clients -->
         <section class="tips spacing">
-
+            <h3>
+                We Create New Worlds !
+            </h3>
+            <h1 class="spacing">
+                Want Tips On Your Storytelling ?
+            </h1>
+            <h5>
+                Join our neswletter for tips on how to elevate your brand through storytelling
+            </h5>
+            <form action="submit" class="spacing">
+                <input type="text" placeholder="Enter your email">
+                <div class="button">
+                    <Button :name="tipButton" />
+                </div>
+            </form>
         </section>
         <!-- /.tips -->
     </div>
