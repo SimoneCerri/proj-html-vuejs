@@ -21,8 +21,5 @@ export default {
 </template>
 
 <style scoped>
-.my_btn
-{
-    background-color: var(--light);
-}
+
 </style>
