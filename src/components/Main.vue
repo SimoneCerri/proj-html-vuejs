@@ -128,6 +128,8 @@ export default {
         <section class="slogan spacing">
             <div class="moon1"></div>
             <div class="ship"></div>
+            <div class="stars1"></div>
+            <div class="stars2"></div>
             <h3 class="danger">
                 Imagine,Create,Experience
             </h3>

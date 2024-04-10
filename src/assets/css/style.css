@@ -201,7 +201,7 @@ button {
       background: url(../../../public/img/globe2.png);
       background-repeat: no-repeat;
       position: absolute;
-      top: 4%;
+      top: 8%;
       left: 60.5%;
       width: 100px;
       height: 100px;
@@ -245,6 +245,30 @@ button {
       z-index: 2;
     }
 
+    .stars1 {
+      background: url(../../../public/img/dots-left.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 8%;
+      left: 8%;
+      width: 1000px;
+      height: 1000px;
+      background-size: contain;
+      z-index: 2;
+    }
+
+    .stars2 {
+      background: url(../../../public/img/dots-right.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 1%;
+      left: 43%;
+      width: 1000px;
+      height: 1000px;
+      background-size: contain;
+      z-index: 2;
+    }
+
     .danger {
       color: var(--danger);
     }
@@ -257,6 +281,12 @@ button {
 
     h4 {
       color: var(--boring);
+    }
+
+    .btn_middle
+    {
+      position: relative;
+      z-index: 9999;
     }
 
     .slogan_video {
@@ -523,6 +553,7 @@ button {
         }
       }
 
+      /* ## CAN MOVE AS A COMMON COMPONENT ## */
       .buttons {
         display: flex;
         gap: 1em;
@@ -687,6 +718,7 @@ button {
       }
     }
 
+    /* ## CAN MOVE AS A COMMON COMPONENT ## */
     .buttons {
       display: flex;
       justify-content: center;
