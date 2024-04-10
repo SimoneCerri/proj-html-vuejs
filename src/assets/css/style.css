@@ -183,6 +183,7 @@ button {
     background: url(../../../public/img/banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 100% 70%;
     position: relative;
 
     .moon1 {
@@ -269,6 +270,27 @@ button {
       z-index: 2;
     }
 
+    .up_shape:before {
+      content: "";
+      position: absolute;
+      bottom: -60%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(./img/bottom-shape.png);
+      background-size: 100vw;
+      background-repeat: no-repeat;
+    }
+
+    .prova
+    {
+      position: absolute;
+      background-color: var(--lightest);
+      height: 300px;
+      bottom: 15%;
+      left: 0;
+    }
+
     .danger {
       color: var(--danger);
     }
@@ -337,7 +359,7 @@ button {
       width: 200px;
       height: 200px;
       background-size: contain;
-      z-index: 2;
+      z-index: 4;
     }
 
     h3 {
@@ -386,6 +408,33 @@ button {
     background: url(../../../public/img/counter-bg.png);
     background-size: cover;
     position: relative;
+
+    .up_shape:before {
+      content: "";
+      position: absolute;
+      bottom: -15%;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background: url(./img/bottom-shape.png);
+      transform: scaleY(60%);
+      background-size: 100vw;
+      background-repeat: no-repeat;
+    }
+
+    .up_shape:after {
+      content: "";
+      position: absolute;
+      bottom: 79.2%;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background: url(./img/bottom-shape.png);
+      transform: scaleY(60%) rotate(180deg);
+      background-size: 100vw;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
 
     .moon {
       background: url(../../../public/img/globe1.png);
@@ -784,17 +833,6 @@ button {
     background-size: cover;
     position: relative;
 
-    /* .up_shape {
-      background: url(./img/bottom-shape.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      transform: rotate(180deg);
-      z-index: 1;
-      top: -82%;
-      width: 100%;
-      height: 100%;
-    } */
-
     .up_shape:before {
       content: "";
       position: absolute;
@@ -820,16 +858,6 @@ button {
       background-size: 100vw;
       background-repeat: no-repeat;
     }
-
-    /* .bottom_shape {
-      background: url(./img/bottom-shape.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: 1;
-      top: 70%;
-      width: 100%;
-      height: 150px;
-    } */
 
     h3 {
       color: var(--danger);

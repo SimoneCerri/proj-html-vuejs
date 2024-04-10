@@ -126,6 +126,8 @@ export default {
         <!-- ##################################################### -->
 
         <section class="slogan spacing">
+            <div class="up_shape"></div>
+            <div class="prova"></div>
             <div class="moon1"></div>
             <div class="ship"></div>
             <div class="stars1"></div>
@@ -182,6 +184,9 @@ export default {
         </section>
         <!-- /.animation_love -->
         <section class="quick_facts spacing">
+            <div class="up_shape">
+
+            </div>
             <h1>
                 Anidio Quick Facts
             </h1>
