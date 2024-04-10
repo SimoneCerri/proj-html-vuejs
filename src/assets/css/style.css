@@ -355,10 +355,10 @@ button {
       background: url(../../../public/img/globe1.png);
       background-repeat: no-repeat;
       position: absolute;
-      top: 0%;
-      left: 36.6%;
-      width: 500px;
-      height: 500px;
+      top: 6%;
+      left: 34.5%;
+      width: 600px;
+      height: 600px;
       background-size: contain;
       z-index: 2;
       opacity: 50%;
@@ -520,12 +520,21 @@ button {
         display: flex;
         gap: 1em;
 
+        /* :hover {
+          background-color: var(--danger);
+        } */
+
         .arrow {
           background-color: var(--lighter);
           padding: 0.8em 1em;
           border-radius: 50%;
           border: 0.5px solid #3333334f;
           color: #3333334f;
+
+          :hover {
+            background-color: var(--danger);
+            color: var(--lightest);
+          }
         }
       }
     }
@@ -617,18 +626,33 @@ button {
           }
 
           .facebook {
+            :hover {
+              background-color: var(--danger);
+              color: var(--lightest);
+            }
+
             i {
               padding: 0.3em 0.5em;
             }
           }
 
           .twitter {
+            :hover {
+              background-color: var(--danger);
+              color: var(--lightest);
+            }
+
             i {
               padding: 0.3em;
             }
           }
 
           .instagram {
+            :hover {
+              background-color: var(--danger);
+              color: var(--lightest);
+            }
+
             i {
               padding: 0.3em 0.4em;
             }
@@ -649,6 +673,11 @@ button {
         border-radius: 50%;
         border: 0.5px solid #3333334f;
         color: #3333334f;
+
+        :hover {
+          background-color: var(--danger);
+          color: var(--lightest);
+        }
       }
     }
   }

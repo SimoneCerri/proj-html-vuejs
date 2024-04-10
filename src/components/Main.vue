@@ -116,9 +116,15 @@ export default {
 <template>
     <div id="main">
         <!-- ##################################################### -->
-        <!-- ## can be refactoring with a V-FOR to make section ## -->
+        <!-- ## Can be refactoring with a V-FOR to make section ## -->
         <!-- ## with h3/h1/h5 + V-FOR for cards + V-IF="button" ## -->
         <!-- ##################################################### -->
+
+        <!-- ##################################################### -->
+        <!-- ## Can move each section as a component for better ## -->
+        <!-- ## maintenance of the App/Site , if have time left ## -->
+        <!-- ##################################################### -->
+
         <section class="slogan spacing">
             <div class="moon1"></div>
             <div class="ship"></div>
@@ -206,7 +212,7 @@ export default {
         <!-- /.our_works -->
         <section class="our_process spacing container">
             <div class="left">
-                
+
             </div>
             <div class="right">
                 <h3>

@@ -14,4 +14,8 @@ export default {
 {
     z-index: 9999;
 }
+
+.index:hover {
+    color: var(--danger);
+}
 </style>
