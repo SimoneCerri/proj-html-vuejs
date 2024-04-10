@@ -18,6 +18,7 @@ export default {
 .my_btn
 {
     border: 1px solid transparent;
+    background-color: var(--light);
 }
 
 :hover {

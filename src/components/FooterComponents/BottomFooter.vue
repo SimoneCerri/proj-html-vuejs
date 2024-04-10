@@ -15,19 +15,13 @@ export default {
         <div class="right">
             <div class="socials">
                 <div class="facebook">
-                    <a href="">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+                    <i class="fa-brands fa-facebook-f"></i>
                 </div>
                 <div class="twitter">
-                    <a href="">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
                 <div class="instagram">
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+                    <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
         </div>

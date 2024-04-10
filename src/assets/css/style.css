@@ -37,6 +37,7 @@
 button {
   border-style: none;
 }
+
 /* #endregion Common */
 
 
@@ -290,7 +291,7 @@ button {
       background: url(../../../public/img/smarttwo.png);
       background-repeat: no-repeat;
       position: absolute;
-      top: -45%;
+      top: -27.5%;
       left: -25%;
       width: 1500px;
       height: 1500px;
@@ -635,6 +636,7 @@ button {
             :hover {
               background-color: var(--danger);
               color: var(--lightest);
+              cursor: pointer;
             }
 
             i {
@@ -646,6 +648,7 @@ button {
             :hover {
               background-color: var(--danger);
               color: var(--lightest);
+              cursor: pointer;
             }
 
             i {
@@ -657,6 +660,7 @@ button {
             :hover {
               background-color: var(--danger);
               color: var(--lightest);
+              cursor: pointer;
             }
 
             i {
@@ -818,18 +822,36 @@ button {
       }
 
       .facebook {
+        :hover {
+          background-color: var(--danger);
+          color: var(--lightest);
+          cursor: pointer;
+        }
+
         i {
           padding: 0.3em 0.5em;
         }
       }
 
       .twitter {
+        :hover {
+          background-color: var(--danger);
+          color: var(--lightest);
+          cursor: pointer;
+        }
+
         i {
           padding: 0.3em;
         }
       }
 
       .instagram {
+        :hover {
+          background-color: var(--danger);
+          color: var(--lightest);
+          cursor: pointer;
+        }
+
         i {
           padding: 0.3em 0.4em;
         }

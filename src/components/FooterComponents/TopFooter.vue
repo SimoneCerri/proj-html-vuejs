@@ -9,4 +9,9 @@ export default {
     <div>{{ name }}</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div:hover
+{
+    color: var(--danger);
+}
+</style>
