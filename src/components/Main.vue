@@ -228,10 +228,10 @@ export default {
                     <CardWithInfo v-for="card in cardProcess" :card />
                 </div>
                 <div class="buttons">
-                    <div class="arrow">
+                    <div class="left_arrow">
                         <i class="fa-solid fa-arrow-left"></i>
                     </div>
-                    <div class="arrow">
+                    <div class="right_arrow">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
@@ -255,10 +255,10 @@ export default {
                 <CardWithInfo v-for="card in members" :card />
             </div>
             <div class="buttons">
-                <div class="arrow">
+                <div class="left_arrow">
                     <i class="fa-solid fa-arrow-left"></i>
                 </div>
-                <div class="arrow">
+                <div class="right_arrow">
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
