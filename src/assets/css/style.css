@@ -282,8 +282,7 @@ button {
       background-repeat: no-repeat;
     }
 
-    .prova
-    {
+    .prova {
       position: absolute;
       background-color: var(--lightest);
       height: 300px;
@@ -654,7 +653,8 @@ button {
       width: 1000px;
       height: 1000px;
       background-size: cover;
-      z-index: 4;
+      z-index: 5;
+      /* background: linear-gradient(to bottom, transparent, red); */
     }
 
     .moon2 {
@@ -668,6 +668,20 @@ button {
       background-size: cover;
       z-index: 2;
     }
+
+/*     .moon3 {
+      background: url(../../../public/img/shape.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 31.5%;
+      left: 0%;
+      width: 1000px;
+      height: 1000px;
+      transform: rotateX(180deg);
+      background-size: cover;
+      z-index: 1;
+      background-image: linear-gradient(to top, transparent, transparent);
+    } */
 
     h3 {
       color: var(--secondary);

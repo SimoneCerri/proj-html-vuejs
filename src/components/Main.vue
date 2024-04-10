@@ -249,6 +249,7 @@ export default {
         <section class="members spacing">
             <div class="moon1"></div>
             <div class="moon2"></div>
+            <div class="moon3"></div>
             <h3>
                 Anidio Magic Team Member
             </h3>
