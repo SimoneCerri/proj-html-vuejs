@@ -37,7 +37,6 @@
 button {
   border-style: none;
 }
-
 /* #endregion Common */
 
 
@@ -139,6 +138,7 @@ button {
 /* #region Header */
 .header {
   background: url(../../../public/img/banner-bg.png);
+  background-size: cover;
 
   #header {
     display: flex;
@@ -181,6 +181,7 @@ button {
   .slogan {
     background: url(../../../public/img/banner-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 
     .moon1 {
@@ -344,11 +345,16 @@ button {
           display: none;
         }
       }
+
+      .card_love:hover {
+        background-color: rgba(255, 166, 0, 0.199);
+      }
     }
   }
 
   .quick_facts {
     background: url(../../../public/img/counter-bg.png);
+    background-size: cover;
     position: relative;
 
     .moon {
@@ -705,6 +711,7 @@ button {
 
   .tips {
     background: url(../../../public/img/counter-bg.png);
+    background-size: cover;
     position: relative;
 
     .up_shape {

@@ -174,7 +174,7 @@ export default {
                 new ideas !
             </h5>
             <div class="our_skills_cards container spacing">
-                <CardWithInfo v-for="card in ourSkills" :card />
+                <CardWithInfo v-for="card in ourSkills" :card class="card_love" />
             </div>
             <div class="ship"></div>
         </section>
